@@ -2,6 +2,7 @@
 /* /*{
 border: black solid 0.5px;
 }*/
+
 *{
     margin: 0;
     padding: 0;
@@ -17,11 +18,14 @@ body{
     margin-left: auto;
     margin-right: auto;
     font-family: 'Raleway', sans-serif;
-    max-width: 1400px;
     overflow: visible;
+    max-width: 1400px;
 }
 i{
     color: #0065FC;
+}
+.gray{
+    color: #F2F2F2;
 }
 a{
     color: black;
@@ -30,6 +34,7 @@ b{
     font-weight: bold;
 }
 h1{
+    font-size: 1.3rem;
     font-weight: bold;
 }
 h2{ 
@@ -48,7 +53,7 @@ ul{
 header{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 .logo{
     margin-top: 3rem;
@@ -95,9 +100,11 @@ form {
     border-top-left-radius:1rem;
     border-bottom-left-radius: 1rem;
 }
-input{
+#accomodation-search{
     background-color: white;
     border: none;
+    font-weight: bold;
+    padding-left: 1rem;
 }
 ::placeholder{
     color: black;
@@ -107,6 +114,7 @@ input:focus{
     outline: none;
 }
 button{
+    
     padding:0.8rem 1rem 0.8rem 1rem;
     border-top-right-radius:1rem;
     border-bottom-right-radius:1rem;
@@ -114,10 +122,13 @@ button{
     color: white;
     border: none;
 }
+#search-button{
+    font-weight:500;
+}
 
 .fa-magnifying-glass{
     display: none;
-    color: white;
+    
 }
 .filtres {
     margin-top: 1rem;
@@ -189,7 +200,7 @@ margin-left: 3rem;
 }
 .rating{
     position: absolute;
-    bottom: 0%;
+    bottom: 5%;
 }
 .result_tab_element{
     height: 100%;
@@ -201,7 +212,8 @@ margin-left: 3rem;
 .result_tab_element_image{
     width: 100%;
     height: 60%;
-    max-height: 13vw;
+    max-height: 8vw;
+    max-height: 112px;/*Taille de 8vw et avec un body limité à 1400px => 112px max, sinon ça fait des trucs moches*/
 }
 .result_tab_element_info{
     height: 40%;
@@ -212,6 +224,7 @@ margin-left: 3rem;
     padding-left: .5rem;
     justify-content: flex-start;
     margin-bottom: 1.5rem;
+    margin-top: .5rem;
 }
 
 .more{
@@ -236,7 +249,8 @@ margin-left: 3rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
     display:flex;
-    height: 11vw;
+    height: 10vw;
+    max-height: 140px; /*Comme avant, limité pour la taille max de 1400*/
 }
 
 .populaire_element_image{    
