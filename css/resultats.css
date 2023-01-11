@@ -31,9 +31,9 @@
   background-color: white;
   border-top: 1px white solid;
   display: flex;
+  justify-content: flex-start;
   flex-direction: column;
   padding-left: 1rem;
-  justify-content: flex-start;
   margin-bottom: 2rem;
   margin-top: 0.5rem;
 }
@@ -60,9 +60,7 @@
     grid-template-rows: repeat(6, 1fr);
   }
   .result_tab_element_image {
-    max-height: 27vw;
-    min-height: 25vw;
-    height: 60%;
+    height: 30vw;
   }
   .more {
     display: none;

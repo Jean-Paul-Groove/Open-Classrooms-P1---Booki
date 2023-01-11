@@ -28,7 +28,7 @@ input:focus {
   outline: none;
 }
 .blue-button {
-  padding: 0.8rem 1rem 0.8rem 1rem;
+  padding: 0.8rem 0rem 0.8rem .8rem;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
   background-color: #0065fc;
@@ -36,11 +36,11 @@ input:focus {
   border: none;
 }
 #search-button {
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .fa-magnifying-glass {
-  display: none;
+ visibility: hidden;
 }
 .filtres {
   margin-top: 1.5rem;
@@ -106,6 +106,7 @@ input:focus {
   #accomodation-search {
     flex-grow: 10;
     font-size: 0.8rem;
+    padding-left: 3vw;
   }
   #search-button {
     display: none;
@@ -114,7 +115,7 @@ input:focus {
     padding: 2vw 3vw 2vw 3vw;
   }
   .fa-magnifying-glass {
-    display: initial;
+    visibility: visible;
     color: white;
   }
 
@@ -131,6 +132,7 @@ input:focus {
     row-gap: 1rem;
     column-gap: 1rem;
     margin-left: 0;
+    margin-top: 1rem;
   }
   .filter-button {
     width: 90%;

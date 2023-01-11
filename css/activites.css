@@ -21,11 +21,12 @@
 }
 
 .activite-titre {
-  display: flex;
   height: 13%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .activite-titre h3 {
-  align-self: center;
   padding-left: 1rem;
 }
 
@@ -37,7 +38,7 @@
     height: 26vw;
   }
   .activite-titre h3 {
-    padding-top: 0.2rem;
+    height: 20%;
     font-size: 0.8rem;
   }
 }
@@ -56,8 +57,10 @@
   .activites_element {
     height: 38vw;
   }
+  .activite-titre {
+    height: 25%;
+  }
   .activites_element h3 {
-    font-size: 0.6rem;
     padding: 0;
     margin: 0.8rem;
   }
