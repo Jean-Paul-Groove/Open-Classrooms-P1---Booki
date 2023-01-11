@@ -1,0 +1,24 @@
+@import "card.css";
+@import "resultats.css";
+@import "populaire.css";
+#hebergement {
+  display: grid;
+  grid-template-columns: 65% 32%;
+  column-gap: 2rem;
+  row-gap: 1rem;
+}
+
+@media screen and (max-width: 991px) {
+  .info h3,
+  h4 {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  #hebergement {
+    width: 100%;
+    grid-template-columns: 100%;
+    column-gap: 0;
+    row-gap: 2rem;
+  }
+}

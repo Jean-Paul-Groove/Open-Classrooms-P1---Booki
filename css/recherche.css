@@ -1,0 +1,142 @@
+.recherche {
+  grid-column: 1 / span 2;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+form {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+#round-edge-label {
+  background-color: #f2f2f2;
+  padding: 1.3rem;
+  color: black;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+#accomodation-search {
+  background-color: white;
+  border: none;
+  font-weight: bold;
+  padding-left: 1rem;
+}
+::placeholder {
+  color: black;
+  opacity: 1;
+}
+input:focus {
+  outline: none;
+}
+.blue-button {
+  padding: 0.8rem 1rem 0.8rem 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background-color: #0065fc;
+  color: white;
+  border: none;
+}
+#search-button {
+  font-weight: 500;
+}
+
+.fa-magnifying-glass {
+  display: none;
+}
+.filtres {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+.filtres ul {
+  display: flex;
+  margin-left: 2rem;
+}
+
+.filter-button {
+  font-weight: bold;
+  align-self: center;
+  border: 0.15rem solid #f2f2f2;
+  width: fit-content;
+  background-color: white;
+  padding: 0.9rem 1.4rem 0.9rem 1.4rem;
+  border-radius: 1.6rem;
+  margin-right: 2rem;
+  height: fit-content;
+  font-size: 1rem;
+}
+.filter-button i {
+  margin-right: 0.35rem;
+}
+.filter-button:hover {
+  background-color: #deebff;
+}
+.fa-info {
+  margin-left: 1rem;
+  padding-right: 1rem;
+  position: relative;
+}
+/*.fa-info::after {
+    content: "";
+    top: -35%;
+    left: -55%;
+    position: absolute;
+    border: 0.2rem solid #f2f2f2;
+    padding: 0.7rem;
+    border-radius: 100%;
+  }*/
+@media screen and (max-width: 991px) {
+  .filter-button {
+    font-size: 1vw;
+    margin-right: 1rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .recherche {
+    padding: 0px 5vw 0px 5vw;
+    margin: 0;
+  }
+  .form {
+    margin-top: 1.5rem;
+    display: flex;
+  }
+  #round-edge-label {
+    padding: 4vw;
+  }
+  #accomodation-search {
+    flex-grow: 10;
+    font-size: 0.8rem;
+  }
+  #search-button {
+    display: none;
+  }
+  .blue-button {
+    padding: 2vw 3vw 2vw 3vw;
+  }
+  .fa-magnifying-glass {
+    display: initial;
+    color: white;
+  }
+
+  .filtres {
+    flex-direction: column;
+  }
+  .filtres h3 {
+    align-self: flex-start;
+  }
+  .filtres ul {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1rem;
+    column-gap: 1rem;
+    margin-left: 0;
+  }
+  .filter-button {
+    width: 90%;
+    padding: 3vw 3vw 3vw 3vw;
+    font-size: 2vw;
+    margin-right: 0;
+    text-align: left;
+  }
+}
