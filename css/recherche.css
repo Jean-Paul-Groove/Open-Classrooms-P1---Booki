@@ -74,17 +74,7 @@ input:focus {
 .fa-info {
   margin-left: 1rem;
   padding-right: 1rem;
-  position: relative;
 }
-/*.fa-info::after {
-    content: "";
-    top: -35%;
-    left: -55%;
-    position: absolute;
-    border: 0.2rem solid #f2f2f2;
-    padding: 0.7rem;
-    border-radius: 100%;
-  }*/
 @media screen and (max-width: 991px) {
   .filter-button {
     font-size: 1vw;
@@ -137,7 +127,7 @@ input:focus {
   .filter-button {
     width: 90%;
     padding: 3vw 3vw 3vw 3vw;
-    font-size: 2vw;
+    font-size: 2.15vw;
     margin-right: 0;
     text-align: left;
   }

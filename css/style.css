@@ -4,10 +4,6 @@
 @import "recherche.css";
 @import "hebergement.css";
 @import "activites.css";
-/* /*{
-border: black solid 0.5px;
-}*/
-
 * {
   margin: 0;
   padding: 0;
@@ -47,7 +43,7 @@ h1 {
 h2 {
   font-weight: bold;
   font-size: 1.2rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 h3 {
   font-size: 0.9rem;
@@ -70,11 +66,7 @@ button:hover {
   object-fit: cover;
   object-position: 50% 50%;
 }
-@media screen and (max-width: 991px) {
-  i {
-    font-size: 0.8rem;
-  }
-}
+
 @media screen and (max-width: 767px) {
   body {
     padding: 0;

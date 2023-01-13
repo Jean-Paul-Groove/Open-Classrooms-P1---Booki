@@ -9,9 +9,22 @@
   position: relative;
   transition: 0.3s ease-in-out;
 }
-.card:hover {
+.card:hover, .card:active {
   box-shadow: 0rem 0.6rem 0.6rem rgba(0, 0, 0, 0.12),
     -0.5rem 0rem 0.6rem rgba(0, 0, 0, 0.12),
     0.5rem 0rem 0.6rem rgba(0, 0, 0, 0.12);
   scale: 1.05;
+}
+.rating {
+  position: absolute;
+  bottom: 0%;
+}
+.rating i {
+  font-size: .8rem;
+}
+
+@media screen and (max-width: 767px) {
+  .rating {
+    bottom: 5%;
+  }
 }

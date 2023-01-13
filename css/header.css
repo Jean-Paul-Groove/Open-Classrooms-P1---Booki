@@ -12,17 +12,18 @@ header {
 .nav {
   display: flex;
 }
-.nav li {
+.nav span {
   padding: 3rem;
+  display: block;
   border-top: 0.2rem solid white;
   border-bottom: 0.2rem solid white;
+  
 }
-.nav li:hover {
+.nav span:hover {
   border-top: 0.2rem solid #0065fc;
-}
-.nav a:hover {
   color: #0065fc;
 }
+
 
 @media screen and (max-width: 767px) {
   header {
@@ -32,25 +33,27 @@ header {
 
   .logo {
     align-self: center;
+    margin-bottom: 10vw;
   }
   nav {
     width: 100%;
     align-self: center;
   }
   .nav {
-    justify-content: space-between;
+    justify-content: space-around;
     text-align: center;
   }
   .nav li {
     width: 100%;
+    height: 100%;
+  }
+  .nav span {
+    width: 100%;
     border-bottom: 0.2rem solid #f2f2f2;
     height: 100%;
-    padding: 10vw 0 10vw 0;
+    padding: 0vw 0rem 10vw 0rem;
   }
-  .nav a {
-    width: 50%;
-  }
-  .nav li:hover {
+  .nav span:hover, .nav span:active {
     border-top: 0.2rem solid white;
     border-bottom: 0.2rem solid #0065fc;
   }
